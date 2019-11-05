@@ -20,13 +20,15 @@ class ViewController: UIViewController, LayoutLoading {
         self.loadLayout(named: "ViewController.xml")
         
         self.label?.addTarget(self, action: #selector(labelTapped), for: .touchUpInside)
+        self.label?.hero.id = "redView"
     }
 
     @objc
     func labelTapped() {
         let vc2 = ViewController2()
         vc2.hero.isEnabled = true
-        vc2.hero.modalAnimationType = .pageIn(direction: .left)
+        vc2.hero.modalAnimationType = .zoomSlide(direction: .left)
+        vc2.view.hero.id = "redView"
         self.navigationController?.pushViewController(vc2, animated: true)
         
         self.heroReplaceViewController(with: vc2)
