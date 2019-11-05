@@ -1,0 +1,22 @@
+PODS:
+  - Hero (1.4.0)
+  - Layout (0.7.0):
+    - Layout/Core (= 0.7.0)
+  - Layout/Core (0.7.0)
+
+DEPENDENCIES:
+  - Hero
+  - Layout (~> 0.6)
+
+SPEC REPOS:
+  trunk:
+    - Hero
+    - Layout
+
+SPEC CHECKSUMS:
+  Hero: bac92350d7201a1a940003e0767c7b52ce7c99a1
+  Layout: 06efb0889c3065340eefceefb938b0add675a12b
+
+PODFILE CHECKSUM: bdfc465ad9a9ab10b59f9f60dd34afc0576b3afa
+
+COCOAPODS: 1.8.4
